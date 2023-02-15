@@ -12,12 +12,13 @@
     './base/helper';
 
 // import components fils
-// @import 
-//     './components/';
+@import 
+    './components/buttons';
 
 // import layout fils
 @import 
-    './layout/aside';
+    './layout/aside',
+    './layout/navBar';
 
 // import pages fils
 @import 
