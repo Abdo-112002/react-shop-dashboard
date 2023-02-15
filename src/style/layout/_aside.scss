@@ -1,0 +1,100 @@
+
+
+
+.aside{
+    width: 260px;
+    padding: 20px;
+    flex-shrink: 0;
+    background-color: $whiteColor;
+    height: 100vh;
+    position: sticky;
+    inset-block-start: 69.600px;
+    overflow: hidden;
+    transition: width 300ms ease-in-out;
+    &__logo {
+        text-align: center;
+        margin-block-end: 20px;
+        margin-inline-start: 10px;
+    }
+    &.active {
+        width: 56px;
+        padding: 20px 8px;
+        @include devices(tablet) {
+            width: 260px;
+        }
+        .aside {
+            &__title{
+                margin-inline-start: 3px;
+                overflow : hidden;
+            }
+            &__item{
+                &--title {
+                    display: none;
+                }
+            }
+        }
+    }
+    .content {
+        max-height:100vh;
+        &>div {
+            margin-block-end: 20px;
+        }
+    }
+    &__title {
+        font-size: 12px;
+        color: $blackColor;
+        text-transform: capitalize;
+        font-weight: normal;
+        margin-block-end: 10px;
+        margin-inline-start: 10px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        padding-block: 10px;
+        font-size: 12px;
+        cursor: pointer;
+        position: relative;
+        transition: background-color , color 300ms ease-in-out;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        &:hover {
+            background-color: $grayColor;
+        }
+        &.active{
+            color: $whiteColor;
+            background-color: $primaryColor;
+            & .aside__item--title{
+                color: $whiteColor;
+            }
+        }
+        &--title {
+            text-transform: capitalize;
+            color: $textColor;
+        }
+        .icon {
+            width: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+            font-size: 25px;
+        }
+    }
+
+    @include devices(tablet) {
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 0px;
+        padding: 0;
+        &__item{
+            &--title {
+                display: flex !important;
+            }
+        }
+    }
+}
