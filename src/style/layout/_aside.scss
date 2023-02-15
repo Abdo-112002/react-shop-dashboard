@@ -19,9 +19,6 @@
     &.active {
         width: 56px;
         padding: 20px 8px;
-        @include devices(tablet) {
-            width: 260px;
-        }
         .aside {
             &__title{
                 margin-inline-start: 3px;
@@ -86,15 +83,7 @@
     }
 
     @include devices(tablet) {
-        position: fixed;
-        top: 0;
-        z-index: 1;
         width: 0px;
-        padding: 0;
-        &__item{
-            &--title {
-                display: flex !important;
-            }
-        }
+        padding: 20px 0px;
     }
 }

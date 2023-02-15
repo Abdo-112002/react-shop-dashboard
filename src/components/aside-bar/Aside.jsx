@@ -15,10 +15,10 @@ import sideIcon9 from '../../assets/Vector9.svg';
 import sideIcon10 from '../../assets/Vector10.svg';
 import sideIcon11 from '../../assets/Vector11.svg';
 
-function Aside() {
+function Aside({navRef}) {
 
   return (
-        <aside className="aside">
+        <aside className="aside" ref={navRef}>
             <div className="aside__logo">
                 <img src={logo} alt="logo" />
             </div>
