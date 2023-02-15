@@ -5,9 +5,9 @@ import './style/main.scss';
 function App() {
  
   return (
-    <div className="App">
+    <main className='minWrapper d-flex'>
         
-    </div>
+    </main>
   )
 }
 
