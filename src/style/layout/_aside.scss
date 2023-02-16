@@ -1,16 +1,20 @@
 
 
-
+.asideWrapper {
+    position: relative;
+}
 .aside{
     width: 260px;
     padding: 20px;
     flex-shrink: 0;
     background-color: $whiteColor;
     height: 100vh;
-    position: sticky;
     inset-block-start: 69.600px;
     overflow: hidden;
     transition: width 300ms ease-in-out;
+    position: sticky;
+    top: 0;
+    left: 0;
     &__logo {
         text-align: center;
         margin-block-end: 20px;
