@@ -37,6 +37,12 @@
         }
     }
 
+    @if $breakpoint == largeScreen {
+        @media screen and (max-width: 1320px) {
+            @content;
+        }
+    }
+
     @if $breakpoint == mobile {
        @media only screen and (max-width: 575px) {
           @content;

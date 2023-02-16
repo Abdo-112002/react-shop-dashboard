@@ -15,7 +15,7 @@ function App() {
   return (
     <div className='minWrapper d-flex'>
         <Aside navRef={navRef}/>
-        <div style={{width :"100%"}}>
+        <div className='w-100'>
           <NavBar openSideMenu={openSideMenu}/>
           <UploadProducts/>
         </div>

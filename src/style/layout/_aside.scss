@@ -86,7 +86,7 @@
         }
     }
 
-    @include devices(tablet) {
+    @include devices(largeScreen) {
         width: 0px;
         padding: 20px 0px;
     }
