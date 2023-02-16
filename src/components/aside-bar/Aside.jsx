@@ -18,7 +18,8 @@ import sideIcon11 from '../../assets/Vector11.svg';
 function Aside({navRef}) {
 
   return (
-        <aside className="aside" ref={navRef}>
+        <section className='asideWrapper'>
+            <aside className="aside" ref={navRef}>
             <div className="aside__logo">
                 <img src={logo} alt="logo" />
             </div>
@@ -106,6 +107,7 @@ function Aside({navRef}) {
                
             </div>
         </aside>
+        </section>
   )
 }
 

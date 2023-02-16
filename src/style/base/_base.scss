@@ -9,7 +9,24 @@ body {
     font-family: $mainFont;
     background-color: $grayColor;
     position: relative;
+    overflow-x: hidden;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track ,
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: $grayColor;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #898989;
+}
+
 
 html {
     scroll-behavior: smooth;

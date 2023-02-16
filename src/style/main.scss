@@ -13,6 +13,8 @@
 
 // import components fils
 @import 
+    './components/arrowsSlider',
+    './components/selectBox',
     './components/buttons';
 
 // import layout fils
@@ -22,4 +24,4 @@
 
 // import pages fils
 @import 
-    './pages/home';
+    './pages/uploadImages';
